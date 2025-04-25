@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Emotion Detection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Welcome, <span id="username-display"></span>!</h1>
+    <button id="logout-button">Logout</button>
+    
+    <video id="webcam" width="640" height="480" autoplay></video>
+    <canvas id="canvas" width="640" height="480" hidden></canvas>
+    
+    <div id="emotion-result" hidden>
+        <p>Detected Emotion: <span id="detected-emotion"></span></p>
+        <div>
+            <span id="emoji-left"></span>
+            <span id="emoji-right"></span>
+        </div>
+        <div id="song-recommendations" hidden>
+            <h3>Song Recommendations</h3>
+            <ul id="songs-list"></ul>
+        </div>
+        
+        <div id="youtube-player"></div>
+    </div>
+
+    <button id="start-webcam">Start Webcam</button>
+    <button id="analyze-emotion">Analyze Emotion</button>
+
+    <script src="script.js"></script>
+    <script>
+        if (!sessionStorage.getItem("loggedIn")) {
+            window.location.href = "login.html"; 
+        }
+
+    
+        document.getElementById("username-display").textContent = sessionStorage.getItem("username");
+
+    
+        document.getElementById("logout-button").addEventListener("click", function() {
+            sessionStorage.removeItem("loggedIn");
+            sessionStorage.removeItem("username");
+            window.location.href = "login.html"; 
+        });
+    </script>
+</body>
+</html>
+
+
