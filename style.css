@@ -1,0 +1,172 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+h2, h3 {
+    color: #444;
+}
+
+
+#login-form {
+    width: 300px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#login-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#login-form button:hover {
+    background-color: #45a049;
+}
+
+
+#webcam {
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+}
+
+#emotion-result {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#emoji-left, #emoji-right {
+    font-size: 40px;
+    margin: 10px;
+}
+
+#song-recommendations {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#songs-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#songs-list li {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+/* Buttons */
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Logout Button */
+#logout-button {
+    background-color: #dc3545;
+    color: white;
+}
+
+#logout-button:hover {
+    background-color: #c82333;
+}
+
+/* Center Content */
+.center-content {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.center-content p {
+    font-size: 18px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #89f7fe, #66a6ff);
+    color: #333;
+    text-align: center;
+  }
+  h1 {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 2.5em;
+  }
+  .container {
+    margin: 20px auto;
+    width: 80%;
+  }
+  video, canvas {
+    border: 5px solid #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .btn-container {
+    margin-top: 20px;
+  }
+  
+  button:hover {
+    background: #0056b3;
+  }
+  #emotion-result, #song-recommendations {
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .emoji {
+    position: fixed;
+    font-size: 5em;
+    z-index: 1000;
+    opacity: 0.8;
+  }
+  #emoji-left {
+    top: 10%;
+    left: 5%;
+  }
+  #emoji-right {
+    top: 10%;
+    right: 5%;
+  } 
+  
